@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import PokemonDetails from './components/PokemonDetail';// Import the new component
+import PokemonDetails from './components/PokemonDetail';
 import { ChakraProvider } from '@chakra-ui/react';
 import Favorites from './components/Favourites';
 
@@ -10,7 +10,7 @@ function App() {
     <ChakraProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/pokemon/:id" element={<PokemonDetails />} /> {/* New route */}
+          <Route path="/pokemon/:id" element={<PokemonDetails />} /> 
           <Route path="/favorites" element={<Favorites />} /> 
 
         </Routes>
